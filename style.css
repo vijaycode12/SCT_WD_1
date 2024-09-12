@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .nav-bar{
+     position: fixed;
+     width:100%;
+     top: 0px;
+     padding: 20px 120px ;
+     background-color:#FEFFF0;
+ }
+ .bar{
+     display: flex;
+     flex-direction: row;
+     justify-content: end;
+     gap: 42px;
+ }
+ a{
+     font-size: 19px;
+     color: black;
+     text-decoration: none;
+     font-weight: 600;
+     transition: .3s ease;
+ }
+ a:hover
+ {
+     color:#F3AEB3;
+ }
+ a.active{
+     color:red;
+ }
+ section{
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 100px;
+     color: white;
+     font-weight:700;
+     font-style: oblique;
+     overflow-x: hidden;
+ }
+ #home{
+     background-color:#DADEBE;
+ }
+ #about{
+     background-color:#ECE2E3;
+ }
+ #services{
+     background-color: #C7B6C7;
+ }
+ #portfolio{
+     background-color: #B6C2C7;
+ }
+ #contact{
+     background-color: rgb(25, 25, 32);
+ }
+ #home:active{
+     background-image: url("mui8a0bppy511.jpg");
+     background-size: cover;
+     transition: 0.3s ease;
+     mix-blend-mode: screen;
+ }
+ #about:active{
+     background-image: url("R.jpeg");
+     background-size: cover;
+     transition: 0.3s ease;
+     mix-blend-mode: screen;
+ }
+ #services:active{
+     background-image: url("Why-IT-Managed-Services-Are-Important-For-Your-Business.jpg");
+     background-size: cover;
+     transition: 0.3s ease;
+     mix-blend-mode: screen;
+ }
+ #portfolio:active{
+     background-image: url("page_1.webp");
+     background-size: cover;
+     transition: 0.3s ease;
+     mix-blend-mode: screen;
+ }
+ #contact:active{
+     background-image: url("contactus.jpg");
+     background-size: cover;
+     transition: 0.3s ease;
+     mix-blend-mode: screen;
+ }
+ @media (max-width: 600px) {
+    .nav-bar {
+        padding: 15px 20px;
+    }
+    
+    .bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    section {
+        font-size: 50px;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    .nav-bar {
+        padding: 20px 40px;
+    }
+    
+    .bar {
+        gap: 30px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    section {
+        font-size: 70px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-bar {
+        padding: 20px 60px;
+    }
+
+    .bar {
+        gap: 35px;
+    }
+
+    a {
+        font-size: 19px;
+    }
+
+    section {
+        font-size: 80px;
+    }
+}
+@media (min-width: 1025px) {
+    .nav-bar {
+        padding: 20px 120px;
+    }
+
+    .bar {
+        gap: 42px;
+    }
+
+    a {
+        font-size: 19px;
+    }
+
+    section {
+        font-size: 100px;
+    }
+}
+ 
